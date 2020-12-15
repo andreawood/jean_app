@@ -1,0 +1,470 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Futura", "Arial", sans-serif;
+  background: #CEECF2;
+  color: #012840;
+}
+
+ h1, h2, h3, h4, h5 {
+   font-family: "Glegoo", "Palatino", "Times New Roman", serif;
+ }
+
+ h1 {
+   display: none;
+ }
+
+ h2 {
+   margin: 0;
+   font-size: 1.5rem;
+   padding: .5rem 1rem;
+ }
+
+ h3 {
+   padding-top: 2rem;
+   font-size: 1.2rem;
+   margin: auto;
+   text-align: center;
+ }
+
+ h4 {
+   margin:auto;
+   padding-top: 1rem;
+   font-size: 1.2rem;
+ }
+
+ h5 {
+   margin: auto;
+   color: #fff;
+   font-size: 1.2rem;
+ }
+
+ header {
+   background-color: #B0D1D9;
+   border-bottom: .2rem #864E13 dashed;
+ }
+
+ footer {
+    margin-top: 5rem;
+    margin-bottom: -15px;
+    background-color: #B0D1D9;
+    border-top: .2rem #864E13 dashed;
+    padding: 1rem 0rem;
+    text-align: center;
+ }
+
+ p {
+   font-size: 1rem;
+ }
+
+ #header-icon {
+   height: 150px;
+ }
+
+ .header-img {
+   height: 200px;
+   display: block;
+   text-align: center;
+   padding: 1rem 1rem 1rem 0rem;
+   max-width: 100%;
+ }
+
+ .button-illustration {
+   height: 60px;
+ }
+
+ .div-headings {
+   margin: 1.5rem auto;
+   width: 60%;
+   background-color: #B0D1D9;
+   border-radius: 30px;
+   border: .2rem #864E13 dashed;
+   padding: .2rem 0rem;
+   padding-left: .8rem;
+   display: flex;
+ }
+
+  .opening {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding: 3rem 0rem 1rem 0rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+/* TIMELINE CSS CODE ADAPTED FROM https://www.w3schools.com/howto/howto_css_timeline.asp */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #022873;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 2rem;
+  position: relative;
+  background-color: #CEECF2;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #022873;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  /*padding: 20px 30px;*/
+  padding: 1rem 2rem;
+  background-color: #022873;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* END OF TIMELINE CSS CODE ADAPTED FROM https://www.w3schools.com/howto */
+
+.content h3 {
+  color: #fff;
+}
+
+.content p{
+  font-size: 1rem;
+  color: #fff;
+}
+
+.content img {
+  max-width: 80%;
+  max-height: 200px;
+}
+
+.caption {
+  font-style:italic;
+  font-size: .5rem;
+}
+
+.description {
+  margin: 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #864E13;
+}
+
+.instructions {
+  margin: 0;
+  font-style: italic;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+
+/* RISE INFO */
+
+#whats-your-rise {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+
+#low {
+  max-width: 350px;
+  text-align: center;
+}
+
+#mid {
+  text-align: center;
+  max-width: 350px;
+}
+
+#high {
+
+  text-align: center;
+  max-width: 350px;
+}
+
+.rise {
+  height: 300px;
+  width: 300px;
+  margin: 0px 25px;
+  padding: 0rem 1rem;
+}
+
+
+.rise-info {
+  max-width: 350px;
+  padding: 0rem 1rem;
+}
+
+/* END RISE INFO */
+
+/* FIT INFO */
+#whats-your-fit {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+
+.fit-section {
+  margin: 0 .5rem;
+  max-width: 225px;
+  text-align: center;
+}
+
+.fit {
+  height: 400px;
+  max-width: 200px;
+  margin: 0px 20px;
+  padding: 0rem .5rem;
+}
+
+.fit-info {
+  max-width: 300px;
+}
+
+#measure-div {
+  padding: 2rem 0rem;
+}
+
+#whats-your-measure {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:baseline;
+  text-align: center;
+  width: 85%;
+
+}
+
+.measurement {
+  margin: 5px 10px;
+  padding: 1rem 2rem;
+  background-color: #B0D1D9;
+  border-radius: 30px;
+  border: .2rem #864E13 dashed;
+}
+
+.measurement-section {
+  max-width: 50%;
+}
+
+
+.measurement-info img {
+  max-width: 60%;
+}
+
+ #styling-div {
+   margin: 0 20%;
+   display: flex;
+   justify-content: center;
+   max-width: 100%;
+ }
+
+#form1 {
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#inspo-img {
+  margin: 0;
+  padding-left: 3rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+
+.form-q {
+  padding-bottom: 2rem;
+}
+
+.answers {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-bottom: 1rem;
+
+}
+
+label {
+margin: auto;
+font-size: 1.2rem;
+padding: .5rem;
+}
+
+input {
+height: 20px;
+width: 50px;
+margin: auto;
+
+}
+
+.button-div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem .5rem;
+
+}
+
+
+
+.outfit_pic {
+  display: none;
+  height: 350px;
+  max-width: 100%;
+}
+
+
+.button-style {
+  font-family: "Glegoo", "Palatino", "Times New Roman", serif;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  background-color: #B0D1D9;
+  border-radius: 30px;
+  border: .2rem #864E13 dashed;
+}
+
+
+
+
+
+
+/* pseudo classes */
+a:link {
+  color: #fff;
+}
+a:visited {
+  color: #5C73F2;
+}
+a:focus {
+  color: #82B8D9;
+}
+a:hover {
+  color: #82B8D9;
+}
+
+a:active {
+  color: #6B8DF2;
+}
+/* TIMELINE CSS CODE FOR MEDIA QUERY ADAPTED FROM https://www.w3schools.com/howto */
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 700px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  /* END OF TIMELINE CSS CODE FOR MEDIA QUERY ADAPTED FROM https://www.w3schools.com/howto */
+
+  .measurement-info img {
+    max-width: 100%;
+  }
+
+  #header-icon {
+    display: none;
+  }
+
+  h1 {
+    margin: auto;
+    text-align: center;
+    display: block;
+  }
+
+  .header-img {
+    height: 100px;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  #inspo-img {
+    max-width: 100%;
+    padding: 0;
+  }
+
+}
